@@ -66,7 +66,7 @@
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <button type="button" class="order-btn">Заказать услугу</button>
+          <button type="button" class="order-btn" data-modal-open >Заказать услугу</button>
         </div>
       </section>
       <!--Особенности компании-->
@@ -131,25 +131,31 @@
           <h2 class="about-title">Чем мы занимаемся</h2>
           <ul class="about-img">
             <li class="list">
-              <img
-                src="./images/img-1.jpg"
-                alt="Рабочий стол програмиста. Кисти рук на клавиатуре, монитор и планшет с кодом "
-                width="370"
-              />
+              <div class="about-item">
+                <img src="./images/img-1.jpg" alt="Рабочий стол програмиста. Кисти рук на клавиатуре, монитор и планшет с кодом "
+                  width="370" />
+                  <p class="about-text">
+                    Десктопные приложения
+                  </p>
+              </div>
             </li>
             <li class="list">
-              <img
-                src="./images/img-2.jpg"
-                alt="Человек с смартфоном и ноутбуком выбирает дизайн сайта на мобильных устройствах"
-                width="370"
-              />
+              <div class="about-item">
+                <img src="./images/img-2.jpg" alt="Человек с смартфоном и ноутбуком выбирает дизайн сайта на мобильных устройствах"
+                  width="370" />
+                <p class="about-text">
+                  Мобильные приложения
+                </p>
+              </div>
             </li>
             <li class="list">
-              <img
-                src="./images/img-3.jpg"
-                alt="Человек держит планшет с изображением цветового круга"
-                width="370"
-              />
+              <div class="about-item">
+                <img src="./images/img-3.jpg" alt="Человек держит планшет с изображением цветового круга" width="370" />
+                <p class="about-text">
+                  Дизайнерские решения
+                </p>
+              </div>
+              
             </li>
           </ul>
         </div>
@@ -429,8 +435,19 @@
                 </svg>
               </a>
             </li>
+          </ul>
         </div>
       </div>
     </footer>
+    <div class="backdrop" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-btn" data-modal-close >
+          <svg class="close-btn">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
